@@ -11,25 +11,29 @@ using namespace std;
 
 int main(int argc, char *argv[]) {
 	//Initialize Person* 
-	Person* pPTR;
+	Person* person;
 	//Student
-	pPTR = new Student;
-	pPTR->print();
+	person = new Student;
+	person->print();
 	//Faculty
-	pPTR=new Faculty;
-	pPTR->print();
+	person=new Faculty;
+	person->print();
 	//Staff
+	person=new Staff;
+	person->print();
+	
 	
 	//IT
-	pPTR=new IT;
+	person=new IT;
+	person->print();
 	
 	//Facilities
+	person=new Facilities;
+	person->print();
 	//Administration
+	person=new Administration;
+	person->print();
 
-	//IT ppp;
-	//pPTR=&ppp;
-//	person->print();
-//	cout<<person->getName()<<endl;
-//	cout<<person->getDOB();
+	
 	return 0;
 }
